@@ -57,4 +57,6 @@ public class Categoria {
     public void setResponsavel(Administrador responsavel) {
         this.responsavel = responsavel;
     }
+
+
 }

@@ -54,7 +54,7 @@ public class Produto {
         return dataCadastro;
     }
 
-    public void setDataCadastro(LocalDate dataCadastro) {
+    public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
 
@@ -70,7 +70,7 @@ public class Produto {
         return dataHoraUltimaAtualizacao;
     }
 
-    public void setDataHoraUltimaAtualizacao(LocalDate dataHoraUltimaAtualizacao) {
+    public void setDataHoraUltimaAtualizacao(String dataHoraUltimaAtualizacao) {
         this.dataHoraUltimaAtualizacao = dataHoraUltimaAtualizacao;
     }
 
@@ -78,7 +78,7 @@ public class Produto {
         return valorUnitario;
     }
 
-    public void setValorUnitario(Float valorUnitario) {
+    public void setValorUnitario(String valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
 

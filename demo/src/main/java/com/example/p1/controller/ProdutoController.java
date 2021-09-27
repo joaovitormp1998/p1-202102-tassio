@@ -27,7 +27,11 @@ public class ProdutoController {
     @GetMapping("/{id}")
     public Produto buscarPeloId(@PathVariable Integer id){
         return produtoRepository.buscarPeloId(id);
+    } @GetMapping("/{nome}")
+    public Produto buscarPeloNome(@PathVariable String nome){
+        return produtoRepository.buscarPeloNome(nome);
     }
+
     @PutMapping("/{id}")
     public  Produto atualizar (@PathVariable Integer id, @RequestBody Produto produto){
         return produtoRepository.atualizar(id, produto);

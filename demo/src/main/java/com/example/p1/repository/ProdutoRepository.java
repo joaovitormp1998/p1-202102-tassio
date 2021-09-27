@@ -22,6 +22,7 @@ public class ProdutoRepository {
         produtoList.add(produto);
         return produto;
     }
+
     public Produto insert(Produto produto, Integer id) {
         produto.setId(id);
         produtoList.add(produto);
@@ -46,5 +47,14 @@ public class ProdutoRepository {
     public void excluir(Integer id) {
         Produto produto = buscarPeloId(id);
         produtoList.remove(produto);
+    }
+
+    public Produto buscarPeloNome(String nome) {
+        for (Produto produto : produtoList) {
+            if (produto.getNome().equals(nome)) {
+                return produto;
+            }
+        }
+        return null;
     }
 }

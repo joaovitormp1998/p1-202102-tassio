@@ -1,14 +1,10 @@
 package com.example.p1.model;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-
 public class PromocaoItem {
     private Integer id;
     private Float valorPromocao;
-    private LocalDate dataCadastro;
-    private LocalTime horaCadastro;
-    private LocalDate dataUltimaAtualizacao;
+    private String dataHoraCadastro;
+    private String dataHoraUltimaAtualizacao;
     private Produto produto;
     private TabelaPromocao tabelaPromocao;
 
@@ -28,28 +24,19 @@ public class PromocaoItem {
         this.valorPromocao = valorPromocao;
     }
 
-    public LocalDate getDataCadastro() {
-        return dataCadastro;
+
+    public void setDataCadastro(String dataCadastro) {
+        this.dataHoraCadastro = dataHoraCadastro;
     }
 
-    public void setDataCadastro(LocalDate dataCadastro) {
-        this.dataCadastro = dataCadastro;
+    
+
+    public String getDataUltimaAtualizacao() {
+        return dataHoraUltimaAtualizacao;
     }
 
-    public LocalTime getHoraCadastro() {
-        return horaCadastro;
-    }
-
-    public void setHoraCadastro(LocalTime horaCadastro) {
-        this.horaCadastro = horaCadastro;
-    }
-
-    public LocalDate getDataUltimaAtualizacao() {
-        return dataUltimaAtualizacao;
-    }
-
-    public void setDataUltimaAtualizacao(LocalDate dataUltimaAtualizacao) {
-        this.dataUltimaAtualizacao = dataUltimaAtualizacao;
+    public void setDataUltimaAtualizacao(String dataUltimaAtualizacao) {
+        this.dataHoraUltimaAtualizacao = dataUltimaAtualizacao;
     }
 
     public Produto getProduto() {
@@ -66,5 +53,11 @@ public class PromocaoItem {
 
     public void setTabelaPromocao(TabelaPromocao tabelaPromocao) {
         this.tabelaPromocao = tabelaPromocao;
+    }
+
+    public void setDataHoraUltimaAtualizacao(String dataHoraUltimaAtualizacao) {
+    }
+
+    public void setDatHoraCadastro(String dataHoraCadastro) {
     }
 }
