@@ -1,0 +1,10 @@
+POST http://localhost:8080/produto
+Content-Type: application/json
+
+{
+  "nome": "Xiomi Redmi Note Pro n9",
+  "descricao": "Celular mas top do mercado",
+  "fotoUrl": "https://www.google.com/search?q=redmi+9&oq=redmi+9&aqs=chrome..69i57.3231j0j4&sourceid=chrome&ie=UTF-8"
+}
+
+###
